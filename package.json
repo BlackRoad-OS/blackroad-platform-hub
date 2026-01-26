@@ -1,0 +1,9 @@
+{
+  "name": "blackroad-platform-hub",
+  "version": "3.0.0",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  }
+}
