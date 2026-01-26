@@ -1,9 +1,29 @@
 {
   "name": "blackroad-platform-hub",
   "version": "3.0.0",
+  "description": "Unified Infrastructure Monitoring for Cloudflare + Vercel",
+  "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
     "tail": "wrangler tail"
+  },
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "vercel",
+    "monitoring",
+    "infrastructure",
+    "platform-hub"
+  ],
+  "author": "BlackRoad-OS",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlackRoad-OS/blackroad-platform-hub.git"
+  },
+  "devDependencies": {
+    "wrangler": "^3.91.0"
   }
 }
