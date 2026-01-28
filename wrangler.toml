@@ -1,7 +1,56 @@
-name = "blackroad-io"
+name = "blackroad-platform-hub"
 main = "src/index.js"
 compatibility_date = "2024-01-01"
 account_id = "848cf0b18d51e0170e0d1537aec3505a"
+workers_dev = true
 
 [vars]
 ENVIRONMENT = "production"
+VERSION = "3.0.0"
+VERCEL_TEAM_ID = "team_TRzkNju2fGETspZKM2AkELHe"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "blackroad-os-main"
+database_id = "e2c6dcd9-c21a-48ac-8807-7b3a6881c4f7"
+
+[[d1_databases]]
+binding = "APOLLO_DB"
+database_name = "apollo-agent-registry"
+database_id = "79f8b80d-3bb5-4dd4-beee-a77a1084b574"
+
+[[d1_databases]]
+binding = "SAAS_DB"
+database_name = "blackroad-saas"
+database_id = "c7bec6d8-42fa-49fb-9d8c-57d626dde6b9"
+
+[[kv_namespaces]]
+binding = "AGENTS_KV"
+id = "28ed114677e54e23ad10cc7901f1fd98"
+
+[[kv_namespaces]]
+binding = "HEALTH_KV"
+id = "416d5f01ed5e4843b98a9e251737e219"
+
+[[kv_namespaces]]
+binding = "API_KEYS"
+id = "57e48a017d4248a39df32661c3377908"
+
+[[kv_namespaces]]
+binding = "USERS_KV"
+id = "67a82ad7824d4b89809e7ae2221aba66"
+
+[[kv_namespaces]]
+binding = "RATE_LIMIT"
+id = "245a00ee1ffe417fbcf519b2dbb141c6"
+
+[[kv_namespaces]]
+binding = "JOBS"
+id = "2557a2b503654590ab7b1da84c7e8b20"
+
+[[kv_namespaces]]
+binding = "REGISTRY_CACHE"
+id = "66289374901747038f122806e6e86ddb"
+
+[triggers]
+crons = ["*/5 * * * *"]
